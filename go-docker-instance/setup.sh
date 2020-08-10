@@ -16,11 +16,15 @@ sudo docker version
 # install go 1.14.7
 wget https://dl.google.com/go/go1.14.7.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.14.7.linux-amd64.tar.gz
-
-# use usr/local/go/bin PATH
+# # use usr/local/go/bin PATH
 # echo 'export PATH=$PATH:/usr/local/go/bin' >> /home/$USER/.profile
 # source ~/.profile
-
 mv /usr/local/go/bin/* /usr/local/bin/
-
 go version
+
+# others
+sudo apt install unzip
+
+# # install MySQL
+# sudo apt install mysql-server mysql-client
+# mysql --version
