@@ -4,9 +4,8 @@ sudo apt update
 sudo apt install git
 git --version
 
-# install make
+# install build-essential
 sudo apt install build-essential
-make --version
 
 # install docker
 curl -fsSL get.docker.com -o get-docker.sh
@@ -24,6 +23,7 @@ go version
 
 # others
 sudo apt install unzip
+sudo apt install make
 
 # # install MySQL
 # sudo apt install mysql-server mysql-client
