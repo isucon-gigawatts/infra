@@ -26,10 +26,9 @@ terraform apply -var "credential_file=***" -var "name=***"
 
 ## 注記
 
-### provider google を扱う場合のcredential fileの準備: 
+### provider google を扱う場合のcredential fileの準備
 
-terraformを実行するにたり、IAM Accountからcredential fileを取得する必要があります。
-適切な権限を設定したサービスアカウントをチーム単位で用意し、そこに紐づいた新しいキーを生成する必要があります
+terraformを実行するにあたり、適切な権限を設定したサービスアカウントをチーム単位で用意し、そこに紐づいた新しいキーを生成する必要があります。
 
 1. Google Cloud PlatformのConsole画面から「IAMと管理」 > 「サービスアカウント」へアクセスする
 2. 該当のサービスアクセスキー (ex. `isucon-terraform`) を選択し、鍵を追加する
