@@ -4,6 +4,14 @@ ISUCON用のインフラを一撃で立てたい人が集まるリポジトリ
 
 ## instance
 
+### 準備: credential file
+
+terraformを実行するにたり、IAM Accountからcredential fileを取得する必要があります。
+今回用に、インスタンス管理だけに絞ったサービスアカウントを以前作ったので、そこに紐づいた新しいキーを生成する必要があります
+
+1. Google Cloud PlatformのConsole画面から「IAMと管理」 > 「サービスアカウント」へアクセスする
+2. name: `isucon-terraform` を選択し、鍵を追加する
+
 ### raw-instance
 
 生のインスタンスを立ち上げる。基本的にこの設定をベースにしている。
