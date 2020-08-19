@@ -10,7 +10,7 @@ terraformを実行するにたり、IAM Accountからcredential fileを取得す
 今回用に、インスタンス管理だけに絞ったサービスアカウントを以前作ったので、そこに紐づいた新しいキーを生成する必要があります
 
 1. Google Cloud PlatformのConsole画面から「IAMと管理」 > 「サービスアカウント」へアクセスする
-2. name: `isucon-terraform` を選択し、鍵を追加する
+2. 該当のサービスアクセスキー (ex. `isucon-terraform`) を選択し、鍵を追加する
 
 ### raw-instance
 
