@@ -9,7 +9,7 @@ provider "google" {
 # doc: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance
 resource "google_compute_instance" "default" {
   name          = var.name
-  machine_type  = "n1-standard-1"
+  machine_type  = "n1-standard-2"
   zone          = "asia-northeast1-b"
   tags = ["tag", "isucon10"]
   boot_disk {
