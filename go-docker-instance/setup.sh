@@ -25,6 +25,23 @@ go version
 sudo apt install unzip
 sudo apt install make
 
-# # install MySQL
-# sudo apt install mysql-server mysql-client
-# mysql --version
+# install MySQL
+sudo apt install mysql-server mysql-client
+mysql --version
+
+# nginx
+sudo apt install nginx
+
+# alp
+wget https://github.com/tkuchiki/alp/releases/download/v1.0.3/alp_linux_amd64.zip
+unzip alp_linux_amd64.zip
+sudo mv alp /usr/local/bin/
+rm alp_linux_amd64.zip 
+alp --help
+
+# tool
+wget percona.com/get/pt-query-digest
+sudo mv pt-query-digest /usr/local/bin/
+export TBLS_VERSION=1.43.1
+curl -L https://git.io/dpkg-i-from-url | bash -s -- https://github.com/k1LoW/tbls/releases/download/v$TBLS_VERSION/tbls_$TBLS_VERSION-1_amd64.deb
+rm tbls_v1.43.1_linux_amd64.tar.gz
