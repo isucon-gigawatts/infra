@@ -5,3 +5,8 @@ variable "credential_file" {
 variable "name" {
   description = "gcp instance name"
 }
+
+variable "region" {
+  description = "region to instantiate"
+  default     = "asia-northeast1"
+}
