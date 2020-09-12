@@ -32,6 +32,12 @@ mysql --version
 # nginx
 sudo apt install nginx
 
+# ssh-key
+cat /dev/zero | ssh-keygen -t rsa -C 'isucon-dev-server' -q -N ""
+echo '\n'
+cat ~/.ssh/id_rsa.pub
+echo "Add to https://github.com/settings/ssh/new ."
+
 # alp
 wget https://github.com/tkuchiki/alp/releases/download/v1.0.3/alp_linux_amd64.zip
 unzip alp_linux_amd64.zip
