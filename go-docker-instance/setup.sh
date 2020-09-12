@@ -51,3 +51,8 @@ sudo mv pt-query-digest /usr/local/bin/
 export TBLS_VERSION=1.43.1
 curl -L https://git.io/dpkg-i-from-url | bash -s -- https://github.com/k1LoW/tbls/releases/download/v$TBLS_VERSION/tbls_$TBLS_VERSION-1_amd64.deb
 rm tbls_v1.43.1_linux_amd64.tar.gz
+
+wget http://mysqltuner.pl/ -O mysqltuner.pl
+wget https://raw.githubusercontent.com/major/MySQLTuner-perl/master/basic_passwords.txt -O basic_passwords.txt
+wget https://raw.githubusercontent.com/major/MySQLTuner-perl/master/vulnerabilities.csv -O vulnerabilities.csv
+
