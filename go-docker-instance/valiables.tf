@@ -8,5 +8,5 @@ variable "name" {
 
 variable "region" {
   description = "region to instantiate"
-  default     = "asia-northeast1"
+  default     = "asia-northeast1-c"
 }
